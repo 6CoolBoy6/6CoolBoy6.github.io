@@ -19,23 +19,23 @@
     <meta name="description" content="宏定义 #define 和常量 const 的区别语法12345&#x2F;&#x2F; #define identifier value#define LENGTH 10 &#x2F;&#x2F; const type variable &#x3D; value;const int  LENGTH &#x3D; 10;  类型和安全检查不同宏定义是字符替换，没有数据类型的区别，同时这种替换没有类型安全检查，可能产生边际效应等错误； const常量是常量的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="大圣碎碎念的Blog">
-<meta property="og:url" content="http://example.com/2023/05/25/C++%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="https://6coolboy6.github.io/2023/05/25/C++%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="大圣碎碎念的Blog">
 <meta property="og:description" content="宏定义 #define 和常量 const 的区别语法12345&#x2F;&#x2F; #define identifier value#define LENGTH 10 &#x2F;&#x2F; const type variable &#x3D; value;const int  LENGTH &#x3D; 10;  类型和安全检查不同宏定义是字符替换，没有数据类型的区别，同时这种替换没有类型安全检查，可能产生边际效应等错误； const常量是常量的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/C++%E7%AC%94%E8%AE%B0.assets/image-20230414111104135.png">
-<meta property="og:image" content="http://example.com/C++%E7%AC%94%E8%AE%B0.assets/image-20230424112944750.png">
-<meta property="og:image" content="http://example.com/C++%E7%AC%94%E8%AE%B0.assets/image-20230523161042705.png">
-<meta property="og:image" content="http://example.com/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523163358919.png">
-<meta property="og:image" content="http://example.com/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523165802461.png">
-<meta property="og:image" content="http://example.com/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523170138886.png">
-<meta property="og:image" content="http://example.com/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523170706759.png">
-<meta property="og:image" content="http://example.com/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523171332244.png">
+<meta property="og:image" content="https://6coolboy6.github.io/C++%E7%AC%94%E8%AE%B0.assets/image-20230414111104135.png">
+<meta property="og:image" content="https://6coolboy6.github.io/C++%E7%AC%94%E8%AE%B0.assets/image-20230424112944750.png">
+<meta property="og:image" content="https://6coolboy6.github.io/C++%E7%AC%94%E8%AE%B0.assets/image-20230523161042705.png">
+<meta property="og:image" content="https://6coolboy6.github.io/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523163358919.png">
+<meta property="og:image" content="https://6coolboy6.github.io/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523165802461.png">
+<meta property="og:image" content="https://6coolboy6.github.io/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523170138886.png">
+<meta property="og:image" content="https://6coolboy6.github.io/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523170706759.png">
+<meta property="og:image" content="https://6coolboy6.github.io/2023/05/25/C++%E7%AC%94%E8%AE%B0/C++%E7%AC%94%E8%AE%B0.assets/image-20230523171332244.png">
 <meta property="article:published_time" content="2023-05-25T08:31:05.525Z">
 <meta property="article:modified_time" content="2023-05-23T09:49:48.938Z">
 <meta property="article:author" content="zss">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/C++%E7%AC%94%E8%AE%B0.assets/image-20230414111104135.png">
+<meta name="twitter:image" content="https://6coolboy6.github.io/C++%E7%AC%94%E8%AE%B0.assets/image-20230414111104135.png">
   
   
   
@@ -77,7 +77,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"XeUNJv4Ft2imU8JJBqhpjFGH-MdYXbMMI","app_key":"O9nXjDg3efpOPP6SeKKy4w3d","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"6coolboy6.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"XeUNJv4Ft2imU8JJBqhpjFGH-MdYXbMMI","app_key":"O9nXjDg3efpOPP6SeKKy4w3d","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -391,7 +391,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/05/25/C++笔记/</div>
+      <div>https://6coolboy6.github.io/2023/05/25/C++笔记/</div>
     </div>
     <div class="license-meta">
       
@@ -455,20 +455,21 @@
   
     <article id="comments" lazyload>
       
-  <div id="valine"></div>
+  <div id="waline"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://lib.baomitu.com/waline/2.14.1/waline.min.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/waline/2.14.1/waline.min.js', function() {
         var options = Object.assign(
-          {"appId":"XeUNJv4Ft2imU8JJBqhpjFGH-MdYXbMMI","appKey":"O9nXjDg3efpOPP6SeKKy4w3d","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"serverURL":"https://blog-7shn5v75n-zss6666yi.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
           {
-            el: "#valine",
+            el: '#waline',
             path: window.location.pathname
           }
         )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
           Fluid.plugins.imageCaption(imgSelector);
           Fluid.plugins.fancyBox(imgSelector);
         })
