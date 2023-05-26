@@ -435,6 +435,12 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/05/26/%E6%96%87%E7%AB%A03/" title="文章3">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">文章3</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
@@ -454,7 +460,8 @@
   
   
     <article id="comments" lazyload>
-      
+      <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
   <div id="waline"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#waline', function() {
@@ -464,7 +471,8 @@
           {"serverURL":"https://blog-7shn5v75n-zss6666yi.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
           {
             el: '#waline',
-            path: window.location.pathname
+            path: window.location.pathname,
+            serverURL: 'https://blog-7shn5v75n-zss6666yi.vercel.app/',
           }
         )
         Waline.init(options);
